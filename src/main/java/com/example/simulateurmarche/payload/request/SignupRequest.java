@@ -10,13 +10,12 @@ import javax.validation.constraints.*;
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+
 import lombok.AllArgsConstructor;
-import lombok.Data;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
+
 import lombok.Setter;
 @Getter
 @Setter
@@ -49,9 +48,9 @@ public class SignupRequest implements Serializable {
     @Size(min = 8, max = 12)
     private String tel;
     
-    private boolean enabled;
-    private String verificationCode;
-	private boolean accountVerified;
+    //private boolean enabled;
+   // private String verificationCode;
+	//private boolean accountVerified;
 
     @Temporal(TemporalType.DATE)
     @JsonFormat(pattern="yyyy-MM-dd")
@@ -59,7 +58,7 @@ public class SignupRequest implements Serializable {
 
 
 
-    private Long organisationId;
+
     
     
 }
