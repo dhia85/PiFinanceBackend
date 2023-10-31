@@ -9,6 +9,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @EnableWebMvc
 @EnableScheduling
 
+
 public class SimulateurMarcheApplication {
 
     public static void main(String[] args) {
